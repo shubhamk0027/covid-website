@@ -153,6 +153,7 @@ history = multi_disease_model.fit_generator(generator=train_gen,
                     steps_per_epoch=10,
                     validation_data=valid_gen,
                     validation_steps=10,
-                    epochs=10)
+                    epochs=1)
 
 
+multi_disease_model.save('covid_chest.h5')
